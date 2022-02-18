@@ -1,0 +1,1 @@
+nslookup slash.org | grep 'Address:' | sed '1d' | cut -b 10-
