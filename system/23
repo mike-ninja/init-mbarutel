@@ -1,0 +1,15 @@
+SSH Session:
+	- Connect to the linux system via ssh as the main user
+	- "sudo useradd -m -d /home/testuser -s /bin/bash -G sudo testuser" to create a new user
+		- -m: Creates the home directory if it does not exist
+		- -d: Overrides the default home directory location
+		- -s: Sets the login shell for the user
+		- -G: Expects a comma-separated list of groups that the user should belong to
+	- Set up password of that new user account via "sudo passwd testuser"
+	- Restart the virtual machine
+	- Connect to the new user account via "ssh testuser@127.0.0.1 -p 2222"
+Graphical Session:
+	- Go to Users and Groups
+	- Click "Add" and fill out details of the new user
+	- Set password for new user
+	- Restart virtual machine and the new user can now log in.

@@ -1,0 +1,2 @@
+!#/bin/bash
+ssh debian@127.0.0.1 -p 2222
