@@ -1,0 +1,5 @@
+#!/bin/bash
+echo -n "Enter something: "
+read something
+
+echo "You have entered : $something"
